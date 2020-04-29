@@ -296,6 +296,26 @@ theme_myriad_semi <- function (base_family = "Myriad Pro SemiCondensed", base_si
     ret
 }
 
+# /Users/stian/Library/Fonts/Myriad Pro Bold SemiCondensed.otf
+# /Users/stian/Library/Fonts/Myriad Pro SemiCondensed.otf
+# /Users/stian/Library/Fonts/Myriad Pro Semibold Condensed Italic.otf
+# /Users/stian/Library/Fonts/Myriad Pro Semibold Condensed.otf
+# /Users/stian/Library/Fonts/Myriad Pro Semibold SemiCondensed Italic.otf
+# /Users/stian/Library/Fonts/Myriad Pro Semibold SemiCondensed.otf
+# /Users/stian/Library/Fonts/MyriadPro-Bold.otf
+# /Users/stian/Library/Fonts/MyriadPro-BoldCond.otf
+# /Users/stian/Library/Fonts/MyriadPro-BoldCondIt.otf
+# /Users/stian/Library/Fonts/MyriadPro-BoldIt.otf
+# /Users/stian/Library/Fonts/MyriadPro-Cond.otf
+# /Users/stian/Library/Fonts/MyriadPro-CondIt.otf
+# /Users/stian/Library/Fonts/MyriadPro-It.otf
+# /Users/stian/Library/Fonts/MyriadPro-Regular.otf
+# /Users/stian/Library/Fonts/MyriadPro-Semibold.otf
+# /Users/stian/Library/Fonts/MyriadPro-SemiboldIt.otf
+# /Users/stian/Library/Fonts/MyriadWebPro-Bold.ttf
+# /Users/stian/Library/Fonts/MyriadWebPro-Italic.ttf
+# /Users/stian/Library/Fonts/MyriadWebPro.ttf
+
 #' Import Myriad font for use in charts
 #'
 #'
@@ -307,10 +327,10 @@ theme_myriad_semi <- function (base_family = "Myriad Pro SemiCondensed", base_si
 import_myriad_semi <- function() {
     myriad_font_dir <- system.file("fonts", "myriad-pro", package = "myriad")
     sysfonts::font_add("Myriad Pro SemiCondensed",
-                       regular = paste0(myriad_font_dir, "/", "MyriadPro-SemiCn.otf"),
-                       bold = paste0(myriad_font_dir, "/", "MyriadPro-BoldSemiCn.otf"),
-                       italic = paste0(myriad_font_dir, "/", "MyriadPro-SemiboldSemiCnIt.otf"),
-                       bolditalic = paste0(myriad_font_dir, "/", "MyriadPro-SemiboldCondIt.otf"))
+                       regular = "/Users/stian/Library/Fonts/Myriad Pro SemiCondensed.otf",
+                       bold = "/Users/stian/Library/Fonts/Myriad Pro Bold SemiCondensed.otf",
+                       italic = "/Users/stian/Library/Fonts/Myriad Pro Semibold SemiCondensed Italic.otf",
+                       bolditalic = "/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed Italic.otf")
     message(sprintf("You will likely need to install these fonts on your system as well. You can find them in [%s]",
         myriad_font_dir))
 }
@@ -327,10 +347,10 @@ import_myriad_semi <- function() {
 import_myriad <- function() {
     myriad_font_dir <- system.file("fonts", "myriad-pro", package="myriad")
     sysfonts::font_add("Myriad Pro Condensed",
-                       regular = paste0(myriad_font_dir, "/", "MyriadPro-Cond.otf"),
-                       bold = paste0(myriad_font_dir, "/", "MyriadPro-SemiboldCond.otf"),
-                       italic = paste0(myriad_font_dir, "/", "MyriadPro-CondIt.otf"),
-                       bolditalic = paste0(myriad_font_dir, "/", "MyriadPro-SemiboldCondIt.otf")
+                       regular = "/Users/stian/Library/Fonts/MyriadPro-Cond.otf",
+                       bold = "/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed.otf",
+                       italic = "/Users/stian/Library/Fonts/MyriadPro-CondIt.otf",
+                       bolditalic = "/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed Italic.otf"
                        )
 
 
