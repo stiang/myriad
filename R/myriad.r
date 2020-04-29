@@ -327,7 +327,7 @@ theme_myriad_semi <- function (base_family = "Myriad Pro SemiCondensed", base_si
 import_myriad_semi <- function() {
     myriad_font_dir <- system.file("fonts", "myriad-pro", package = "myriad")
     sysfonts::font_add("Myriad Pro SemiCondensed",
-                       regular = "/Users/stian/Library/Fonts/Myriad Pro SemiCondensed.otf",
+                       "/Users/stian/Library/Fonts/Myriad Pro SemiCondensed.otf",
                        bold = "/Users/stian/Library/Fonts/Myriad Pro Bold SemiCondensed.otf",
                        italic = "/Users/stian/Library/Fonts/Myriad Pro Semibold SemiCondensed Italic.otf",
                        bolditalic = "/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed Italic.otf")
@@ -347,7 +347,7 @@ import_myriad_semi <- function() {
 import_myriad <- function() {
     myriad_font_dir <- system.file("fonts", "myriad-pro", package="myriad")
     sysfonts::font_add("Myriad Pro Condensed",
-                       regular = "/Users/stian/Library/Fonts/MyriadPro-Cond.otf",
+                       "/Users/stian/Library/Fonts/MyriadPro-Cond.otf",
                        bold = "/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed.otf",
                        italic = "/Users/stian/Library/Fonts/MyriadPro-CondIt.otf",
                        bolditalic = "/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed Italic.otf"
