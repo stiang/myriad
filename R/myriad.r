@@ -40,7 +40,7 @@
 #'   theme_myriad(grid="Y") +
 #'   theme(axis.text.y=element_blank())
 #' }
-theme_myriad <- function(base_family="Myriad Pro Condensed", base_size = 12,
+theme_myriadx <- function(base_family="Myriad Pro Condensed", base_size = 12,
                          plot_title_family=base_family, plot_title_size = 18,
                          plot_title_face="bold", plot_title_margin = 10,
                          subtitle_family="Myriad Pro Condensed", subtitle_size = 12,
@@ -188,7 +188,7 @@ theme_myriad <- function(base_family="Myriad Pro Condensed", base_size = 12,
 #'   ggplot2::theme(axis.text.y=ggplot2::element_blank())
 #' }
 ##' @author Kieran Healy
-theme_myriad_semi <- function (base_family = "Myriad Pro SemiCondensed", base_size = 11,
+theme_myriad_semix <- function (base_family = "Myriad Pro SemiCondensed", base_size = 11,
     plot_title_family = base_family, plot_title_size = 14, plot_title_face = "bold",
     plot_title_margin = 10, subtitle_family = "Myriad Pro SemiCondensed",
     subtitle_size = 12, subtitle_face = "plain", subtitle_margin = 15,
@@ -324,7 +324,7 @@ theme_myriad_semi <- function (base_family = "Myriad Pro SemiCondensed", base_si
 #'   recommended that you install them on your system the same way you would any
 #'   other font you wish to use in other programs.
 #' @export
-import_myriad_semi <- function() {
+import_myriad_semix <- function() {
     myriad_font_dir <- system.file("fonts", "myriad-pro", package = "myriad")
     sysfonts::font_add("Myriad Pro SemiCondensed",
                        regular = '/Users/stian/Library/Fonts/Myriad Pro SemiCondensed.otf',
@@ -344,7 +344,7 @@ import_myriad_semi <- function() {
 #'   recommended that you install them on your system the same way you would any
 #'   other font you wish to use in other programs.
 #' @export
-import_myriad <- function() {
+import_myriadx <- function() {
     myriad_font_dir <- system.file("fonts", "myriad-pro", package="myriad")
     sysfonts::font_add("Myriad Pro Condensed",
                        regular = '/Users/stian/Library/Fonts/MyriadPro-Cond.otf',
