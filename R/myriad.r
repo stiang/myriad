@@ -324,15 +324,13 @@ theme_myriad_semi <- function (base_family = "Myriad Pro SemiCondensed", base_si
 #'   recommended that you install them on your system the same way you would any
 #'   other font you wish to use in other programs.
 #' @export
-
-# "/Users/stian/Library/Fonts/Myriad Pro SemiCondensed.otf"
 import_myriad_semi <- function() {
     myriad_font_dir <- system.file("fonts", "myriad-pro", package = "myriad")
     sysfonts::font_add("Myriad Pro SemiCondensed",
-                       regular = "/Users/stian/Library/Fonts/MyriadPro-Cond.otf",
-                       bold = "/Users/stian/Library/Fonts/Myriad Pro Bold SemiCondensed.otf",
-                       italic = "/Users/stian/Library/Fonts/Myriad Pro Semibold SemiCondensed Italic.otf",
-                       bolditalic = "/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed Italic.otf")
+                       regular = '/Users/stian/Library/Fonts/Myriad Pro SemiCondensed.otf',
+                       bold = '/Users/stian/Library/Fonts/Myriad Pro Bold SemiCondensed.otf',
+                       italic = '/Users/stian/Library/Fonts/Myriad Pro Semibold SemiCondensed Italic.otf',
+                       bolditalic = '/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed Italic.otf')
     message(sprintf("You will likely need to install these fonts on your system as well. You can find them in [%s]",
         myriad_font_dir))
 }
@@ -349,14 +347,12 @@ import_myriad_semi <- function() {
 import_myriad <- function() {
     myriad_font_dir <- system.file("fonts", "myriad-pro", package="myriad")
     sysfonts::font_add("Myriad Pro Condensed",
-                       regular = "/Users/stian/Library/Fonts/MyriadPro-Cond.otf",
-                       bold = "/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed.otf",
-                       italic = "/Users/stian/Library/Fonts/MyriadPro-CondIt.otf",
-                       bolditalic = "/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed Italic.otf"
-                       )
-
-
-  message(sprintf("You will likely need to install these fonts on your system as well. You can find them in [%s]", myriad_font_dir))
+                       regular = '/Users/stian/Library/Fonts/MyriadPro-Cond.otf',
+                       bold = '/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed.otf',
+                       italic = '/Users/stian/Library/Fonts/MyriadPro-CondIt.otf',
+                       bolditalic = '/Users/stian/Library/Fonts/Myriad Pro Semibold Condensed Italic.otf')
+  message(sprintf("You will likely need to install these fonts on your system as well. You can find them in [%s]", 
+      myriad_font_dir))
 
 }
 
